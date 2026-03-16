@@ -1,0 +1,18 @@
+export const elasticGoods: ReadonlyArray<{ title: string; slug: string }> = [
+  { title: "Ankhorilling Kitchenware",    slug: "ankhorilling-kitchenware" },
+  { title: "Musbeast Scrimshaw Dangles",  slug: "musbeast-scrimshaw-dangles" },
+  { title: "Witchcraft Mining Drill",     slug: "witchcraft-mining-drill" },
+  { title: "Aggeloi War Tins",            slug: "aggeloi-war-tins" },
+  { title: "Valley Hydroculture Fillets", slug: "valley-hydroculture-fillets" },
+  { title: "Unity Syrup",                 slug: "unity-syrup" },
+  { title: "Originium Saplings",          slug: "originium-saplings" },
+  { title: "Seš'qamam Knucklebones",      slug: "sesqamam-knucklebones" },
+  { title: "Astarron Crystals",           slug: "astarron-crystals" },
+  { title: "Vigilant Pickaxes",           slug: "vigilant-pickaxes" },
+  { title: "Hard Noggin Helmets",         slug: "hard-noggin-helmets" },
+  { title: "Scrap Toy Blocks",            slug: "scrap-toy-blocks" },
+  { title: "Wuxia Movies",                slug: "wuxia-movies" },
+  { title: "Wuling Frozen Pears",         slug: "wuling-frozen-pears" },
+  { title: "Eureka Anti-smog Tincture",   slug: "eureka-anti-smog-tincture" },
+  { title: "Nymphsprout",                 slug: "nymphsprout" },
+] as const;

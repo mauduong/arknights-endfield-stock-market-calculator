@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-page-dark:          #1A1A1A;
+  --color-card-dark:          #2C2C2C;
+  --color-col-header-dark:    #252525;
+  --color-border-dark:        #3C3C3C;
+  --color-border-hover-dark:  #525252;
+  --color-input-dark:         #383838;
+  --color-input-focus-dark:   #444444;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@keyframes best-pick-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 2px color-mix(in srgb, var(--glow-color) 45%, transparent),
+      0 0 10px color-mix(in srgb, var(--glow-color) 25%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 0 0 3px var(--glow-color),
+      0 0 20px color-mix(in srgb, var(--glow-color) 65%, transparent),
+      0 0 40px color-mix(in srgb, var(--glow-color) 25%, transparent);
+  }
+}
+.animate-best-pick-glow {
+  animation: best-pick-glow 2s ease-in-out infinite;
+}
+
+/* Remove number input spinners when user types */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
