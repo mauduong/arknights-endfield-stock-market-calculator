@@ -16,6 +16,7 @@ export const regionSlugs = {
     "scrap-toy-blocks",
   ]),
   wuling: new Set([
+    "chubby-lung-tianshi",
     "wuxia-movies",
     "wuling-frozen-pears",
     "eureka-anti-smog-tincture",

@@ -6,7 +6,7 @@ An unofficial fan tool to help you find the most profitable elastic goods to sel
 
 ## Features
 
-- Current 16 elastic goods tracked simultaneously as of Patch 1.1
+- Current 17 elastic goods tracked simultaneously as of Patch 1.1
 - Market, Player, and Friend price columns per Elastic Good
 - Best recommendation to sell highlighted after calculation for both Valley IV and Wuling
 - All data persisted to `localStorage` just in case you hit F5 or your device crashes
@@ -32,7 +32,7 @@ pnpm build
 pnpm dev
 ```
 
-> **Node.js requirement:** Vite 7 requires Node.js ≥ 20.19 or ≥ 22.12. Use [nvm](https://github.com/nvm-sh/nvm) to switch versions if needed.
+> **Node.js requirement:** Vite 7 requires Node.js ≥ 22. Use [nvm](https://github.com/nvm-sh/nvm) to switch versions if needed.
 
 ## Available Scripts
 
@@ -101,7 +101,6 @@ Please either create a branch or raise an issue for any changes.
 ### Future Elastic Goods to add when released
 
 - Aerial Receptionists (pkg)
-- Chubby Lung Tianshi (pkg)
 - Qingbo Rafts (pkg)
 - Xiran-Hue Fireworks (pkg)
 - Xiranite Filter Cores (pkg)
@@ -115,7 +114,6 @@ There are currently some issues identified from original development. Feel free 
 TODOs identified:
 
 - Ardelia image scaling can be improved when the screen width shrinks under 720p, most noticeable on mobile width dimensions
-- Better guards/input validation
 - Not recommended labels for when calculations are not worth it due to low profits even if it is a positive profit
 
 ## License

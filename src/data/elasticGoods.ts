@@ -11,6 +11,7 @@ export const elasticGoods: ReadonlyArray<{ title: string; slug: string }> = [
   { title: "Vigilant Pickaxes",           slug: "vigilant-pickaxes" },
   { title: "Hard Noggin Helmets",         slug: "hard-noggin-helmets" },
   { title: "Scrap Toy Blocks",            slug: "scrap-toy-blocks" },
+  { title: "Chubby Lung Tianshi",         slug: "chubby-lung-tianshi" },
   { title: "Wuxia Movies",                slug: "wuxia-movies" },
   { title: "Wuling Frozen Pears",         slug: "wuling-frozen-pears" },
   { title: "Eureka Anti-smog Tincture",   slug: "eureka-anti-smog-tincture" },

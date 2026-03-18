@@ -55,7 +55,9 @@ const StockCard = ({
     ];
 
   const region: Region | undefined = getRegion(elasticIconSlug);
-  const regionStyle: (typeof regionStyles)[Region] = region ? regionStyles[region] : regionStyles.valleyIV;
+  const regionStyle: (typeof regionStyles)[Region] = region
+    ? regionStyles[region]
+    : regionStyles.valleyIV;
 
   // Only get the first two Initials, third letter is omitted for readability e.g Eureka Anti-smog Tincture = EA instead of EAT
   const elasticGoodsInitials: string = item.title
@@ -71,7 +73,8 @@ const StockCard = ({
       return;
     }
     const num = parseInt(value, 10);
-    if (!isNaN(num) && num >= 0 && num <= MAX_INPUT_VALUE) updateItem(item.id, field, num);
+    if (!isNaN(num) && num >= 0 && num <= maxInputValue)
+      updateItem(item.id, field, num);
   };
 
   const profitColour =
@@ -233,7 +236,7 @@ interface CompactInputProps {
   placeholder?: string;
 }
 
-const MAX_INPUT_VALUE = 9_999_999;
+const maxInputValue = 9_999_999;
 
 const blockNonInteger = (e: React.KeyboardEvent<HTMLInputElement>) => {
   if ([".", ",", "-", "+", "e", "E"].includes(e.key)) e.preventDefault();
@@ -256,7 +259,7 @@ const CompactInput = ({
     min="0"
     value={value}
     placeholder={placeholder}
-    max={MAX_INPUT_VALUE}
+    max={maxInputValue}
     onChange={(e) => onChange(e.target.value)}
     onKeyDown={blockNonInteger}
     onPaste={blockNonIntegerPaste}
