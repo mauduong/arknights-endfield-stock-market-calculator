@@ -122,6 +122,7 @@ function App() {
             {regions.map((region) => (
               <button
                 key={region}
+                type="button"
                 onClick={() => scrollToRegion(region)}
                 className="flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg border transition-colors cursor-pointer hover:brightness-125"
                 style={{
@@ -136,6 +137,7 @@ function App() {
             ))}
           </div>
           <button
+            type="button"
             onClick={() => {
               if (window.confirm("Are you sure you want to clear all data?")) {
                 setItems(generateEmptyData());
@@ -216,6 +218,7 @@ function App() {
 
       {/* Back to top button */}
       <button
+        type="button"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="fixed bottom-28 right-4 z-50 p-2.5 rounded-full border border-slate-600 text-slate-400 hover:text-white hover:border-slate-500 transition-colors cursor-pointer"
         style={{ backgroundColor: colours.darkBg }}

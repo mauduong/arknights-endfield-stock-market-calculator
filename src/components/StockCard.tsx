@@ -71,7 +71,7 @@ const StockCard = ({
       return;
     }
     const num = parseInt(value, 10);
-    if (!isNaN(num) && num >= 0) updateItem(item.id, field, num);
+    if (!isNaN(num) && num >= 0 && num <= MAX_INPUT_VALUE) updateItem(item.id, field, num);
   };
 
   const profitColour =
@@ -126,17 +126,15 @@ const StockCard = ({
           <h2 className="font-semibold text-white text-sm leading-tight truncate">
             {item.title}
           </h2>
-          {isBest && (
-            <span
-              className="inline-flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider"
-              style={{ color: regionStyle.bestPick }}
-            >
-              <Star size={9} fill="currentColor" />
-              Best pick
-            </span>
-          )}
+          <span
+            className={`inline-flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider ${isBest ? "visible" : "invisible"}`}
+            style={{ color: regionStyle.bestPick }}
+          >
+            <Star size={9} fill="currentColor" />
+            Best pick
+          </span>
         </div>
-        <div className="shrink-0 text-right">
+        <div className="shrink-0 text-right min-w-20">
           <span className="block text-[9px] text-slate-300 uppercase tracking-widest font-semibold">
             Profit
           </span>
@@ -235,8 +233,15 @@ interface CompactInputProps {
   placeholder?: string;
 }
 
+const MAX_INPUT_VALUE = 9_999_999;
+
 const blockNonInteger = (e: React.KeyboardEvent<HTMLInputElement>) => {
   if ([".", ",", "-", "+", "e", "E"].includes(e.key)) e.preventDefault();
+};
+
+const blockNonIntegerPaste = (e: React.ClipboardEvent<HTMLInputElement>) => {
+  const pasted = e.clipboardData.getData("text");
+  if (!/^\d+$/.test(pasted)) e.preventDefault();
 };
 
 const CompactInput = ({
@@ -251,8 +256,10 @@ const CompactInput = ({
     min="0"
     value={value}
     placeholder={placeholder}
+    max={MAX_INPUT_VALUE}
     onChange={(e) => onChange(e.target.value)}
     onKeyDown={blockNonInteger}
+    onPaste={blockNonIntegerPaste}
     className="w-full px-2 py-1 bg-input-dark border border-transparent focus:border-blue-500 focus:bg-input-focus-dark rounded text-xs font-mono outline-none transition-colors text-slate-100 placeholder:text-slate-500 text-center"
   />
 );
