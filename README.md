@@ -115,6 +115,7 @@ TODOs identified:
 
 - Ardelia image scaling can be improved when the screen width shrinks under 720p, most noticeable on mobile width dimensions
 - Not recommended labels for when calculations are not worth it due to low profits even if it is a positive profit
+- How to use tool tip top right. Screenshots ingame to show what values to take and plot in
 
 ## License
 
