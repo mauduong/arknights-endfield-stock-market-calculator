@@ -98,13 +98,6 @@ Contributions are welcomed!
 
 Please either create a branch or raise an issue for any changes.
 
-### Future Elastic Goods to add when released
-
-- Aerial Receptionists (pkg)
-- Qingbo Rafts (pkg)
-- Xiran-Hue Fireworks (pkg)
-- Xiranite Filter Cores (pkg)
-
 Elastic Good names may be incorrect at the time of Patch 1.1 information
 
 ### Actionable Contributions
@@ -113,6 +106,7 @@ There are currently some issues identified from original development. Feel free 
 
 TODOs identified:
 
+- Reorder Wuling Stock when fully released
 - Ardelia image scaling can be improved when the screen width shrinks under 720p, most noticeable on mobile width dimensions
 - Not recommended labels for when calculations are not worth it due to low profits even if it is a positive profit
 - How to use tool tip top right. Screenshots ingame to show what values to take and plot in
