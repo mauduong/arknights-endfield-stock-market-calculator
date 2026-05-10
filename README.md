@@ -6,7 +6,7 @@ An unofficial fan tool to help you find the most profitable elastic goods to sel
 
 ## Features
 
-- Current 17 elastic goods tracked simultaneously as of Patch 1.1
+- Current 22 elastic goods tracked simultaneously as of Patch 1.2
 - Market, Player, and Friend price columns per Elastic Good
 - Best recommendation to sell highlighted after calculation for both Valley IV and Wuling
 - All data persisted to `localStorage` just in case you hit F5 or your device crashes
