@@ -17,14 +17,14 @@ export const regionSlugs = {
   ]),
   wuling: new Set([
     "aerial-receptionists",
-    "chubby-lung-tianshi",
-    "wuxia-movies",
+    "xiran-hue-fireworks",
     "wuling-frozen-pears",
     "qingbo-rafts",
     "eureka-anti-smog-tincture",
+    "chubby-lung-tianshi",
+    "xiranite-filter-cores",
     "nymphsprout",
-    "xiran-hue-fireworks",
-    "xiranite-filter-cores"
+    "wuxia-movies"
   ]),
 } as const satisfies Record<string, ReadonlySet<string>>;
 
