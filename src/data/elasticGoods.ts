@@ -12,7 +12,6 @@ export const elasticGoods: ReadonlyArray<{ title: string; slug: string }> = [
   { title: "Scrap Toy Blocks",            slug: "scrap-toy-blocks" },
   { title: "Hard Noggin Helmets",         slug: "hard-noggin-helmets" },
   { title: "Aerial Receptionists",        slug: "aerial-receptionists" },
-  { title: "Xiran-Hue Fireworks",         slug: "xiran-hue-fireworks" },
   { title: "Chubby Lung Tianshi",         slug: "chubby-lung-tianshi" },
   { title: "Nymphsprout",                 slug: "nymphsprout" },
   { title: "Xiranite Filter Cores",       slug: "xiranite-filter-cores" },
@@ -20,4 +19,5 @@ export const elasticGoods: ReadonlyArray<{ title: string; slug: string }> = [
   { title: "Wuling Frozen Pears",         slug: "wuling-frozen-pears" },
   { title: "Wuxia Movies",                slug: "wuxia-movies" },
   { title: "Eureka Anti-smog Tincture",   slug: "eureka-anti-smog-tincture" },
+  { title: "Xiran-Hue Fireworks",         slug: "xiran-hue-fireworks" },
 ] as const;
